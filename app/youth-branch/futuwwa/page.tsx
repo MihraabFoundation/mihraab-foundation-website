@@ -14,7 +14,7 @@ export default function FutuwwaPage() {
       <section className="py-20 px-4 md:px-8 max-w-6xl mx-auto">
         <div className="space-y-8">
           <p className="text-lg text-foreground/80 leading-relaxed">
-            Futuwwa is our youth development program focused on building character, leadership, and Islamic values. Content coming soon.
+            Futuwwa is our youth development program focused on building character, leadership, and Islamic values. Content coming soon...
           </p>
         </div>
       </section>
