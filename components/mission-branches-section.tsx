@@ -47,40 +47,34 @@ export default function MissionBranchesSection() {
         </p>
 
         {/* Diagram Wrapper */}
-        <div className="relative flex flex-col items-center">
+        <div className="flex flex-col items-center">
           {/* Top Node */}
-          <div className="relative z-20 mb-20">
-            <div className="w-48 h-30 rounded-3xl bg-[#e6e7de] border border-primary/30 flex flex-col items-center justify-center">
-              <Image
-                src="/logos/logo_white_transparent_bg.png"
-                alt="Mihraab Foundation"
-                width={96}
-                height={96}
-              />
-              <span className="text-sm tracking-widest font-semibold text-primary">
+          <div className="mb-20">
+            <div className="w-38 h-38 rounded-full bg-[#e6e7de] border border-primary/30 flex flex-col items-center justify-center">
+              <span className="text-md tracking-widest font-semibold text-primary">
                 BRANCHES
               </span>
             </div>
           </div>  
 
           {/* Branch Nodes */}
-          <div className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24 w-full">
             {branches.map((branch) => (
               <motion.div
                 key={branch.id}
                 whileHover={{ y: -6 }}
                 className="flex flex-col items-center text-center"
               >
-                <div className="relative mb-6">
-                  <div className="w-32 h-32 rounded-full bg-[#e6e7de] border border-primary/30 flex items-center justify-center">
+                <div className="mb-6">
+                  <div className="w-34 h-32 rounded-full bg-[#e6e7de] border border-primary/30 flex items-center justify-center">
                     {branch.icon}
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-serif font-semibold text-primary mb-3">
+                <h3 className="text-2xl font-serif font-semibold text-primary mb-5">
                   {branch.title}
                 </h3>
-                <p className="text-muted-foreground max-w-xs">
+                <p className="text-muted-foreground">
                   {branch.description}
                 </p>
               </motion.div>
