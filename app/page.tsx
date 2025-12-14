@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <HeroSection />
-      <EventsCarousel />
       <MissionBranchesSection />
+      <EventsCarousel />
       <Footer />
     </main>
   )

@@ -36,26 +36,18 @@ const branches: BranchNode[] = [
 
 export default function MissionBranchesSection() {
   return (
-    <section className="py-18 px-4 bg-background overflow-hidden">
-      <div className="max-w-6xl mx-auto text-center relative">
+    <section className="py-18 px-4 bg-background">
+      <div className="max-w-6xl mx-auto text-center">
         {/* Header */}
-        <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
-          Our Mission
+        <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-4">
+          Branches
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-20">
           Distinct paths, united by one mission of faith, growth, and service.
         </p>
 
         {/* Diagram Wrapper */}
-        <div className="flex flex-col items-center">
-          {/* Top Node */}
-          <div className="mb-20">
-            <div className="w-38 h-38 rounded-full bg-[#e6e7de] border border-primary/30 flex flex-col items-center justify-center">
-              <span className="text-md tracking-widest font-semibold text-primary">
-                BRANCHES
-              </span>
-            </div>
-          </div>  
+        <div className="flex flex-col items-center"> 
 
           {/* Branch Nodes */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24 w-full">
@@ -66,7 +58,7 @@ export default function MissionBranchesSection() {
                 className="flex flex-col items-center text-center"
               >
                 <div className="mb-6">
-                  <div className="w-34 h-32 rounded-full bg-[#e6e7de] border border-primary/30 flex items-center justify-center">
+                  <div className="w-38 h-36 rounded-full bg-[#e6e7de] border border-primary/30 flex items-center justify-center">
                     {branch.icon}
                   </div>
                 </div>

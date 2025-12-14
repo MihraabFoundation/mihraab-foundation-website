@@ -19,7 +19,7 @@ export default function Footer() {
       <div className="relative z-10 text-primary-foreground">
         {/* Main Footer Content */}
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-4">
             <div className="md:col-span-1 flex flex-col justify-start">
               <img
                 src="/logos/caption_white_transparent_bg.png"
@@ -73,6 +73,11 @@ export default function Footer() {
                 <li>
                   <Link href="/youth-branch/halaqahs" className="opacity-80 hover:opacity-100 transition-opacity">
                     Halaqahs
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/youth-branch/futuwwa" className="opacity-80 hover:opacity-100 transition-opacity">
+                    Futuwwa
                   </Link>
                 </li>
               </ul>
@@ -137,9 +142,6 @@ export default function Footer() {
           <div className="flex justify-center gap-6 py-8">
             <a href="#" className="opacity-80 hover:opacity-100 transition-opacity" aria-label="Facebook">
               <Facebook className="w-5 h-5" />
-            </a>
-            <a href="#" className="opacity-80 hover:opacity-100 transition-opacity" aria-label="Twitter">
-              <Twitter className="w-5 h-5" />
             </a>
             <a href="#" className="opacity-80 hover:opacity-100 transition-opacity" aria-label="Instagram">
               <Instagram className="w-5 h-5" />

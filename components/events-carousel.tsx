@@ -78,14 +78,14 @@ export default function EventsCarousel() {
   }
 
   return (
-    <section className="py-18 px-4 md:px-8 bg-muted/30">
+    <section className="py-18 px-4 md:px-8 bg-secondary/5">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">Upcoming Events</h2>
+          <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-4">Upcoming Events</h2>
           <p className="text-lg text-muted-foreground">Join us for enriching educational and community events</p>
         </div>
 
-        {/* Carousel - Hidden on mobile */}
+        {/* Carousel - Hidden on mobile */} 
         <div className="hidden md:block">
           <div className="relative">
             {/* Events Grid */}
