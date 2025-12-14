@@ -78,7 +78,7 @@ export default function EventsCarousel() {
   }
 
   return (
-    <section className="py-16 md:py-24 px-4 md:px-8 bg-muted/30">
+    <section className="py-18 px-4 md:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">Upcoming Events</h2>
