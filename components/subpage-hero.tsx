@@ -29,10 +29,11 @@ export default function SubpageHero({
       <div className="relative z-50 flex items-center justify-between px-6 md:px-12 py-1 md:py-2">
         {/* Logo - Left aligned */}
         <Link href="/" className="shrink-0">
-          <img
+          <Image
             src="/logos/foundation_white_transparent_bg.png"
             alt="Mihraab Foundation"
-            className="h-20 md:h-32 w-auto"
+            height={150}
+            width={150}
           />
         </Link>
 

@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ChevronDown, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 interface NavItem {
@@ -28,14 +28,21 @@ const navItems: NavItem[] = [
     submenu: [
       { label: "Halaqahs", href: "/youth-branch/halaqahs" },
       { label: "Futuwwa", href: "/youth-branch/futuwwa" },
+      { label: "Youth Chaplaincy", href: "/youth-branch/youth-chaplaincy" },
+    ],
+  },
+  {
+    label: "Outreach Branch",
+    submenu: [
+      { label: "Workshops", href: "/outreach-branch/workshops" },
+      { label: "Suhbah", href: "/outreach-branch/suhbah" },
+      { label: "New Muslims", href: "/outreach-branch/new-muslims" },
     ],
   },
   {
     label: "Hifdh Academy",
     submenu: [
-      { label: "Apply", href: "/hifdh-academy/apply" },
       { label: "Methodology", href: "/hifdh-academy/methodology" },
-      { label: "Code of Conduct", href: "/hifdh-academy/code-of-conduct" },
       { label: "Sponsor Hifdh Students", href: "/hifdh-academy/sponsor-hifdh-students" },
     ],
   },
@@ -45,12 +52,6 @@ const navItems: NavItem[] = [
       { label: "Purpose", href: "/about/purpose" },
       { label: "Team", href: "/about/team" },
       { label: "Contact", href: "/about/contact" },
-    ],
-  },
-  {
-    label: "Multimedia",
-    submenu: [
-      { label: "Articles", href: "/multimedia/articles" },
     ],
   },
 ]
@@ -69,12 +70,11 @@ export default function Navbar() {
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center gap-6 px-8">
+      <div className="hidden md:flex items-center gap-3 px-8">
         {navItems.map((item) => (
           <div key={item.label} className="relative group">
-            <button className="text-white font-medium text-xs uppercase tracking-wide px-2 py-1 flex items-center gap-1 hover:bg-white/10 rounded transition-colors">
+            <button className="text-white font-medium text-xs uppercase tracking-wide px-2 py-1 hover:bg-white/10 rounded transition-colors">
               {item.label}
-              {item.submenu && <ChevronDown size={14} />}
             </button>
 
             {item.submenu && (
@@ -108,15 +108,9 @@ export default function Navbar() {
               <div key={item.label}>
                 <button
                   onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
-                  className="w-full text-left font-medium text-sm uppercase tracking-wide px-3 py-2 flex items-center justify-between hover:bg-primary/80 rounded transition-colors"
+                  className="w-full text-left font-medium text-sm uppercase tracking-wide px-3 py-2 hover:bg-primary/80 rounded transition-colors"
                 >
                   {item.label}
-                  {item.submenu && (
-                    <ChevronDown
-                      size={16}
-                      className={`transition-transform ${openDropdown === item.label ? "rotate-180" : ""}`}
-                    />
-                  )}
                 </button>
 
                 {/* Mobile Dropdown */}

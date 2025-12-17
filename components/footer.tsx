@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Youtube } from "lucide-react"
+import { Mail, Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -19,12 +19,12 @@ export default function Footer() {
       <div className="relative z-10 text-primary-foreground">
         {/* Main Footer Content */}
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-12 mb-4">
             <div className="md:col-span-1 flex flex-col justify-start">
               <img
                 src="/logos/caption_white_transparent_bg.png"
                 alt="Mihraab Foundation"
-                className="h-50 w-auto mb-4 opacity-100"
+                className="w-full max-w-[200px] md:max-w-[180px] h-auto opacity-100"
               />
             </div>
 
@@ -43,6 +43,14 @@ export default function Footer() {
                     className="opacity-80 hover:opacity-100 transition-opacity"
                   >
                     Sacred Knowledge Classes
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/scholastic-branch/sponsor-students"
+                    className="opacity-80 hover:opacity-100 transition-opacity"
+                  >
+                    Sponsor Students
                   </Link>
                 </li>
                 <li>
@@ -80,6 +88,33 @@ export default function Footer() {
                     Futuwwa
                   </Link>
                 </li>
+                <li>
+                  <Link href="/youth-branch/youth-chaplaincy" className="opacity-80 hover:opacity-100 transition-opacity">
+                    Youth Chaplaincy
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Outreach Branch Column */}
+            <div>
+              <h3 className="font-serif text-sm font-semibold mb-4 uppercase tracking-wide">Outreach Branch</h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link href="/outreach-branch/workshops" className="opacity-80 hover:opacity-100 transition-opacity">
+                    Workshops
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/outreach-branch/suhbah" className="opacity-80 hover:opacity-100 transition-opacity">
+                    Suhbah
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/outreach-branch/new-muslims" className="opacity-80 hover:opacity-100 transition-opacity">
+                    New Muslims
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -88,21 +123,8 @@ export default function Footer() {
               <h3 className="font-serif text-sm font-semibold mb-4 uppercase tracking-wide">Hifdh Academy</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/hifdh-academy/apply" className="opacity-80 hover:opacity-100 transition-opacity">
-                    Apply
-                  </Link>
-                </li>
-                <li>
                   <Link href="/hifdh-academy/methodology" className="opacity-80 hover:opacity-100 transition-opacity">
                     Methodology
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/hifdh-academy/code-of-conduct"
-                    className="opacity-80 hover:opacity-100 transition-opacity"
-                  >
-                    Code of Conduct
                   </Link>
                 </li>
                 <li>
@@ -184,3 +206,4 @@ export default function Footer() {
     </footer>
   )
 }
+

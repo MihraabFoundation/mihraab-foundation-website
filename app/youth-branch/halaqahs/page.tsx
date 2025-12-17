@@ -47,14 +47,14 @@ const halaqahs: Halaqah[] = [
     },
   },
   {
-    name: "Eastside Halaqah",
-    day: "Friday",
-    time: "7:30 PM - 9:00 PM",
-    conductor: "Mawlāna Ahmad Ali",
+    name: "Girls Halaqah (Ages 13-18)",
+    day: "Sunday",
+    time: "1:30 PM - 3:00 PM",
+    conductor: "Sister Sarah Khan",
     flyer: "/halaqahs/eastside-flyer.jpg", // Placeholder - update with actual flyer path
     location: {
-      name: "Eastside Location",
-      address: "789 Example Boulevard, Bellevue, WA 98004",
+      name: "Masjid Umar al-Farooq",
+      address: "5507 238th St SW, Mountlake Terrace, WA 98043",
       mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172158.29556188564!2d-122.4821472!3d47.6131742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1702838400000!5m2!1sen!2sus",
     },
   },

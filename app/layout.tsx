@@ -21,20 +21,7 @@ export const metadata: Metadata = {
     "Mihraab Foundation - Cultivating Sacred Knowledge for Contemporary Lives. Three branches: Scholastic Branch, Youth Branch, and Hifdh Academy.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
+    icon: "/favicon.ico",
     apple: "/apple-icon.png",
   },
 }
