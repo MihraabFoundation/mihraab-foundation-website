@@ -47,6 +47,12 @@ const navItems: NavItem[] = [
       { label: "Contact", href: "/about/contact" },
     ],
   },
+  {
+    label: "Multimedia",
+    submenu: [
+      { label: "Articles", href: "/multimedia/articles" },
+    ],
+  },
 ]
 
 export default function Navbar() {

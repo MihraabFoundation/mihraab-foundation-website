@@ -1,5 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
+import Script from "next/script"
 import { Playfair_Display, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
@@ -48,6 +49,13 @@ export default function RootLayout({
       <body className={`${playfairDisplay.variable} ${inter.variable} font-sans antialiased`}>
         {children}
         <Analytics />
+        {/* CharityStack Embed */}
+        <Script
+          id="charitystack-embed"
+          src="https://prod-donation-elements-b-donationelementsjsfilesb-1m4f4dl6p6b21.s3.us-east-2.amazonaws.com/bundle.js"
+          data-id="M_ErMWEORbU0"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )

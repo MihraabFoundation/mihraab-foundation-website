@@ -57,17 +57,17 @@ const residentScholars: TeamMember[] = [
 const boardOfTrustees: TeamMember[] = [
   {
     name: "Shaykh Umair Ahmad",
-    title: "Executive Director & Resident Scholar",
+    title: "Executive Director",
     image: "/staff/umair_ahmad_transparent.png"
   },
   {
     name: "Shaykh Qasim Hatem",
-    title: "Resident Scholar",
+    title: "Religious Chair",
     image: "/staff/qasim_hatem_transparent.png"
   },
   {
     name: "Qari Osman Shareef",
-    title: "Hifdh Academy Director & Resident Scholar",
+    title: "Religious Chair",
     image: "/staff/osman_transparent.png"
   },
   {
