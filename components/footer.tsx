@@ -102,8 +102,8 @@ export default function Footer() {
               <h3 className="font-serif text-sm font-semibold mb-4 uppercase tracking-wide">Hifdh Academy</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/hifdh-academy/methodology" className="opacity-80 hover:opacity-100 transition-opacity">
-                    Methodology
+                  <Link href="/hifdh-academy" className="opacity-80 hover:opacity-100 transition-opacity">
+                    Hifdh Academy
                   </Link>
                 </li>
               </ul>
@@ -154,8 +154,8 @@ export default function Footer() {
               <div className="hidden md:block text-white/30">|</div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 shrink-0" />
-                <a href="mailto:info@mihraab.org" className="hover:opacity-100 transition-opacity">
-                  info@mihraab.org
+                <a href="mailto:info@mihraab.com" className="hover:opacity-100 transition-opacity">
+                  info@mihraab.com
                 </a>
               </div>
             </div>

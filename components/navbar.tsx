@@ -38,9 +38,7 @@ const navItems: NavItem[] = [
   },
   {
     label: "Hifdh Academy",
-    submenu: [
-      { label: "Methodology", href: "/hifdh-academy/methodology" },
-    ],
+    href: "/hifdh-academy",
   },
   {
     label: "About",
@@ -69,22 +67,33 @@ export default function Navbar() {
       <div className="hidden md:flex items-center gap-3 px-8">
         {navItems.map((item) => (
           <div key={item.label} className="relative group">
-            <button className="text-white font-medium text-xs uppercase tracking-wide px-2 py-1 hover:bg-white/10 rounded transition-colors">
-              {item.label}
-            </button>
+            {item.href ? (
+              <Link 
+                href={item.href}
+                className="text-white font-medium text-xs uppercase tracking-wide px-2 py-1 hover:bg-white/10 rounded transition-colors block"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <>
+                <button className="text-white font-medium text-xs uppercase tracking-wide px-2 py-1 hover:bg-white/10 rounded transition-colors">
+                  {item.label}
+                </button>
 
-            {item.submenu && (
-              <div className="absolute top-full left-0 mt-0 bg-primary text-primary-foreground rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 min-w-48 shadow-lg z-50 pointer-events-auto">
-                {item.submenu.map((subitem) => (
-                  <Link
-                    key={subitem.label}
-                    href={subitem.href}
-                    className="block px-4 py-2 text-sm hover:bg-primary/80 transition-colors"
-                  >
-                    {subitem.label}
-                  </Link>
-                ))}
-              </div>
+                {item.submenu && (
+                  <div className="absolute top-full left-0 mt-0 bg-primary text-primary-foreground rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 min-w-48 shadow-lg z-50 pointer-events-auto">
+                    {item.submenu.map((subitem) => (
+                      <Link
+                        key={subitem.label}
+                        href={subitem.href}
+                        className="block px-4 py-2 text-sm hover:bg-primary/80 transition-colors"
+                      >
+                        {subitem.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </>
             )}
           </div>
         ))}
@@ -102,26 +111,37 @@ export default function Navbar() {
           <div className="flex flex-col p-4 gap-2">
             {navItems.map((item) => (
               <div key={item.label}>
-                <button
-                  onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
-                  className="w-full text-left font-medium text-sm uppercase tracking-wide px-3 py-2 hover:bg-primary/80 rounded transition-colors"
-                >
-                  {item.label}
-                </button>
+                {item.href ? (
+                  <Link
+                    href={item.href}
+                    className="block w-full text-left font-medium text-sm uppercase tracking-wide px-3 py-2 hover:bg-primary/80 rounded transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <>
+                    <button
+                      onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
+                      className="w-full text-left font-medium text-sm uppercase tracking-wide px-3 py-2 hover:bg-primary/80 rounded transition-colors"
+                    >
+                      {item.label}
+                    </button>
 
-                {/* Mobile Dropdown */}
-                {item.submenu && openDropdown === item.label && (
-                  <div className="bg-primary/80 rounded ml-4 mt-1">
-                    {item.submenu.map((subitem) => (
-                      <Link
-                        key={subitem.label}
-                        href={subitem.href}
-                        className="block px-4 py-2 text-sm hover:bg-primary/60 transition-colors border-l-2 border-primary-foreground/30"
-                      >
-                        {subitem.label}
-                      </Link>
-                    ))}
-                  </div>
+                    {/* Mobile Dropdown */}
+                    {item.submenu && openDropdown === item.label && (
+                      <div className="bg-primary/80 rounded ml-4 mt-1">
+                        {item.submenu.map((subitem) => (
+                          <Link
+                            key={subitem.label}
+                            href={subitem.href}
+                            className="block px-4 py-2 text-sm hover:bg-primary/60 transition-colors border-l-2 border-primary-foreground/30"
+                          >
+                            {subitem.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
                 )}
               </div>
             ))}

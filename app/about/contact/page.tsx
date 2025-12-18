@@ -1,6 +1,9 @@
 import SubpageHero from "@/components/subpage-hero"
 import Footer from "@/components/footer"
-import { Mail, MapPin, Clock, Phone } from "lucide-react"
+import { Mail, MapPin, Clock, ArrowRight, ExternalLink } from "lucide-react"
+import { Separator } from "@/components/ui/separator"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 
 export const metadata = {
   title: "Contact Us | Mihraab Foundation",
@@ -13,7 +16,7 @@ export default function ContactPage() {
       <SubpageHero title="Contact Us" />
 
       {/* Main Content */}
-      <section className="py-16 px-4 md:px-8">
+      <section className="py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Intro Text */}
           <div className="text-center mb-16">
@@ -23,44 +26,57 @@ export default function ContactPage() {
             </p>
           </div>
 
-          {/* Contact Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            {/* General Inquiries Card */}
-            <div className="bg-secondary/5 rounded-2xl p-8 border border-primary/10">
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+          {/* Contact Methods - List Style */}
+          <div className="space-y-8 mb-16">
+            {/* General Inquiries */}
+            <div className="flex items-start gap-6 pb-8 border-b border-primary/10">
+              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                 <Mail className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-serif font-semibold text-primary mb-3">
-                General Inquiries
-              </h3>
-              <p className="text-muted-foreground mb-4">
-                For questions about our programs, classes, events, or any general information.
-              </p>
-              <a 
-                href="mailto:info@mihraab.com" 
-                className="text-secondary font-medium hover:underline text-lg"
-              >
-                info@mihraab.com
-              </a>
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <h3 className="text-2xl font-serif font-bold text-primary">
+                    General Inquiries
+                  </h3>
+                  <Badge variant="outline" className="border-primary text-primary">
+                    Primary Contact
+                  </Badge>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  For questions about our programs, classes, events, or any general information.
+                </p>
+                <a 
+                  href="mailto:info@mihraab.com" 
+                  className="text-xl text-secondary font-semibold hover:underline inline-flex items-center gap-2"
+                >
+                  info@mihraab.com
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+              </div>
             </div>
 
-            {/* Financial/Donations Card */}
-            <div className="bg-secondary/5 rounded-2xl p-8 border border-primary/10">
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                <Mail className="w-7 h-7 text-primary" />
+            {/* Financial/Donations */}
+            <div className="flex items-start gap-6 pb-8 border-b border-primary/10">
+              <div className="w-14 h-14 rounded-full bg-secondary/20 flex items-center justify-center shrink-0">
+                <Mail className="w-7 h-7 text-secondary" />
               </div>
-              <h3 className="text-xl font-serif font-semibold text-primary mb-3">
-                Financial & Donations
-              </h3>
-              <p className="text-muted-foreground mb-4">
-                For questions about donations, zakat, sponsorships, or financial matters.
-              </p>
-              <a 
-                href="mailto:accounting@mihraab.com" 
-                className="text-secondary font-medium hover:underline text-lg"
-              >
-                accounting@mihraab.com
-              </a>
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <h3 className="text-2xl font-serif font-bold text-primary">
+                    Financial & Donations
+                  </h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  For questions about donations, zakat, sponsorships, or financial matters.
+                </p>
+                <a 
+                  href="mailto:accounting@mihraab.com" 
+                  className="text-xl text-secondary font-semibold hover:underline inline-flex items-center gap-2"
+                >
+                  accounting@mihraab.com
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </div>
 
