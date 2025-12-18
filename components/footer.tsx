@@ -45,11 +45,6 @@ export default function Footer() {
                     Sacred Knowledge Classes
                   </Link>
                 </li>
-                <li>
-                  <Link href="/scholastic-branch/workshops" className="opacity-80 hover:opacity-100 transition-opacity">
-                    Workshops
-                  </Link>
-                </li>
               </ul>
             </div>
 

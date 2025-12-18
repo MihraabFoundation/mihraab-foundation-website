@@ -1,10 +1,8 @@
 import SubpageHero from "@/components/subpage-hero"
 import Footer from "@/components/footer"
-import Image from "next/image"
-import { Calendar, Clock, User, MapPin, BookOpen } from "lucide-react"
+import { BookOpen } from "lucide-react"
 import { Halaqah } from "@/models/Halaqah"
 import HalaqahCard from "@/components/halaqah-card"
-import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 
 export const metadata = {
@@ -76,17 +74,17 @@ export default function HalaqahsPage() {
           {/* Quick Stats */}
           <div className="flex flex-wrap justify-center gap-6 mt-12">
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-1">{halaqahs.length}</div>
+              <div className="text-3xl font-bold text-secondary mb-1">{halaqahs.length}</div>
               <div className="text-sm text-muted-foreground uppercase tracking-wide">Active Halaqahs</div>
             </div>
             <Separator orientation="vertical" className="h-12" />
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-1">3+</div>
+              <div className="text-3xl font-bold text-secondary mb-1">3+</div>
               <div className="text-sm text-muted-foreground uppercase tracking-wide">Locations</div>
             </div>
             <Separator orientation="vertical" className="h-12" />
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-1">Weekly</div>
+              <div className="text-3xl font-bold text-secondary mb-1">Weekly</div>
               <div className="text-sm text-muted-foreground uppercase tracking-wide">Sessions</div>
             </div>
           </div>

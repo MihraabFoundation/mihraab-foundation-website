@@ -1,5 +1,6 @@
 import SubpageHero from "@/components/subpage-hero"
 import Footer from "@/components/footer"
+import ApplyButton from "@/components/hifdh-apply-button"
 import Link from "next/link"
 import { BookOpen, Users, MapPin, Clock, DollarSign, FileText, GraduationCap, CheckCircle, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -309,11 +310,7 @@ export default function HifdhAcademyPage() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <Link href="/hifdh-academy/apply">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg">
-                  Apply Now
-                </Button>
-              </Link>
+              <ApplyButton />
               
               <Link href="/hifdh-academy/code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">
                 <Button 

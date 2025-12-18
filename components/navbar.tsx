@@ -17,7 +17,6 @@ const navItems: NavItem[] = [
     submenu: [
       { label: "Mihraab Seminary", href: "/scholastic-branch/seminary" },
       { label: "Sacred Knowledge Classes", href: "/scholastic-branch/sacred-knowledge-classes" },
-      { label: "Workshops", href: "/scholastic-branch/workshops" },
     ],
   },
   {
