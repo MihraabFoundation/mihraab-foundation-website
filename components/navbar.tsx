@@ -17,10 +17,7 @@ const navItems: NavItem[] = [
     submenu: [
       { label: "Mihraab Seminary", href: "/scholastic-branch/seminary" },
       { label: "Sacred Knowledge Classes", href: "/scholastic-branch/sacred-knowledge-classes" },
-      { label: "Sponsor Students", href: "/scholastic-branch/sponsor-students" },
-      { label: "Financial Aid - Seminary", href: "/scholastic-branch/financial-aid-seminary" },
       { label: "Workshops", href: "/scholastic-branch/workshops" },
-      { label: "Financial Aid - General", href: "/financial-aid-general" },
     ],
   },
   {
@@ -43,7 +40,6 @@ const navItems: NavItem[] = [
     label: "Hifdh Academy",
     submenu: [
       { label: "Methodology", href: "/hifdh-academy/methodology" },
-      { label: "Sponsor Hifdh Students", href: "/hifdh-academy/sponsor-hifdh-students" },
     ],
   },
   {

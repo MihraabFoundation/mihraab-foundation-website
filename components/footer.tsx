@@ -46,29 +46,8 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/scholastic-branch/sponsor-students"
-                    className="opacity-80 hover:opacity-100 transition-opacity"
-                  >
-                    Sponsor Students
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/scholastic-branch/financial-aid-seminary"
-                    className="opacity-80 hover:opacity-100 transition-opacity"
-                  >
-                    Financial Aid - Seminary
-                  </Link>
-                </li>
-                <li>
                   <Link href="/scholastic-branch/workshops" className="opacity-80 hover:opacity-100 transition-opacity">
                     Workshops
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/financial-aid-general" className="opacity-80 hover:opacity-100 transition-opacity">
-                    Financial Aid - General
                   </Link>
                 </li>
               </ul>
@@ -127,14 +106,6 @@ export default function Footer() {
                     Methodology
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/hifdh-academy/sponsor-hifdh-students"
-                    className="opacity-80 hover:opacity-100 transition-opacity"
-                  >
-                    Sponsor Hifdh Students
-                  </Link>
-                </li>
               </ul>
             </div>
 
@@ -179,14 +150,7 @@ export default function Footer() {
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 shrink-0" />
                 <span>Greater Seattle, WA</span>
-              </div>
-              <div className="hidden md:block text-white/30">|</div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 shrink-0" />
-                <a href="tel:+12065551234" className="hover:opacity-100 transition-opacity">
-                  (206) 555-1234
-                </a>
-              </div>
+              </div>              
               <div className="hidden md:block text-white/30">|</div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 shrink-0" />
