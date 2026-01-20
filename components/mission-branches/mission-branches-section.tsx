@@ -16,21 +16,21 @@ const branches: BranchNode[] = [
     title: "Scholastic",
     description:
       "Advancing Islamic knowledge through structured learning and scholarship.",
-    icon: <BookOpen className="w-12 h-12 text-primary" />,
+    icon: <BookOpen className="w-12 h-12 text-secondary" />,
   },
   {
     id: "youth",
     title: "Youth",
     description:
       "Nurturing confident Muslim youth through mentorship and leadership.",
-    icon: <Users className="w-12 h-12 text-primary" />,
+    icon: <Users className="w-12 h-12 text-secondary" />,
   },
   {
     id: "outreach",
     title: "Outreach",
     description:
       "Serving the broader community through service and engagement.",
-    icon: <HandHeart className="w-12 h-12 text-primary" />,
+    icon: <HandHeart className="w-12 h-12 text-secondary" />,
   },
 ]
 

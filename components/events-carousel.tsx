@@ -100,7 +100,7 @@ export default function EventsCarousel() {
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                     {event.isFeatured && (
-                      <div className="absolute top-3 right-3 bg-accent text-white px-3 py-1 rounded-full text-xs font-semibold">
+                      <div className="absolute top-3 right-3 bg-secondary text-white px-3 py-1 rounded-full text-xs font-semibold">
                         Featured
                       </div>
                     )}

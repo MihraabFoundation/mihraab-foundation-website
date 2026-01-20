@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import Script from "next/script"
 import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
+import "../styles/globals.css"
 
 export const metadata: Metadata = {
   title: "Mihraab Foundation | Islamic Education Seattle",
