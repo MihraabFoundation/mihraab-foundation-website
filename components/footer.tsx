@@ -6,8 +6,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-linear-to-b from-[oklch(0.55_0.08_103)] to-[oklch(0.35_0.07_103)]" />
+    <footer className="relative overflow-hidden bg-accent">
       <div
         className="absolute inset-0 opacity-10"
         style={{
@@ -18,13 +17,13 @@ export default function Footer() {
 
       <div className="relative z-10 text-primary-foreground">
         {/* Main Footer Content */}
-        <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-6 gap-12 mb-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 pt-12 pb-8">
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-8 mb-2">
             <div className="md:col-span-1 flex flex-col justify-start">
               <img
-                src="/logos/caption_white_transparent_bg.png"
+                src="/branding/images/01_Logos/Combination Mark/Combination Mark White.svg"
                 alt="Mihraab Foundation"
-                className="w-full max-w-[200px] md:max-w-[180px] h-auto opacity-100"
+                className="w-full max-w-[240px] h-auto opacity-100"
               />
             </div>
 
@@ -127,7 +126,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex justify-center gap-6 py-8">
+          <div className="flex justify-center gap-6 py-6">
             <a href="#" className="opacity-80 hover:opacity-100 transition-opacity" aria-label="Facebook">
               <Facebook className="w-5 h-5" />
             </a>
@@ -139,13 +138,13 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="text-center space-y-4 py-8 border-t border-white/20">
+          <div className="text-center space-y-4 py-6 border-t border-white/20">
             {/* Contact Information */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-sm opacity-90">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm opacity-90">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 shrink-0" />
                 <span>Greater Seattle, WA</span>
-              </div>              
+              </div>
               <div className="hidden md:block text-white/30">|</div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 shrink-0" />
@@ -156,7 +155,7 @@ export default function Footer() {
             </div>
 
             {/* Copyright */}
-            <div className="text-xs opacity-70 pt-4">
+            <div className="text-xs opacity-70 pt-2">
               <p>© {currentYear} Mihraab Foundation. All rights reserved.</p>
             </div>
           </div>
