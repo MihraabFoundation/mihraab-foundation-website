@@ -18,19 +18,19 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-linear-to-r from-primary/60 via-primary/70 to-primary/80" />
 
       {/* Content Container */}
-      <div className="relative z-10 w-full min-h-150 flex flex-col">
+      <div className="relative z-10 w-full min-h-[500px] flex flex-col">
         {/* Announcement Banner */}
         <div className="w-full bg-[oklch(0.75_0.1_47)] text-center py-2 text-sm text-secondary-foreground">
           Upcoming Event: Registration for Hifdh Academy Fall 2025 is now open!
         </div>
-        <div className="flex items-center justify-between px-6 md:px-12 py-1 md:py-2">
-          {/* Logo - Left aligned */}
+        <div className="flex items-center justify-between px-4 md:px-8 py-1 md:py-2">
           <Link href="/" className="shrink-0">
             <Image
-              src="/logos/foundation_white_transparent_bg.png"
+              src="/branding/images/01_Logos/One lined Word Mark/One Line Word Mark White.svg"
               alt="Mihraab Foundation"
-              height={150}
-              width={150}
+              height={32}
+              width={180}
+              className="h-6 sm:h-7 md:h-8 w-auto transition-all"
             />
           </Link>
 
@@ -39,17 +39,17 @@ export default function HeroSection() {
         </div>
 
         {/* Hero Content - Centered vertically */}
-        <div className="flex-1 flex items-center justify-center px-4 md:px-8 pb-32">
+        <div className="flex-1 flex items-center justify-center px-4 md:px-8 pb-16">
           <div className="max-w-3xl text-center">
             {/* Main Tagline */}
             <h1 className="text-lg md:text-2xl font-serif font-bold text-white mb-6 leading-tight">
-              Seek. <span className="text-accent">Learn.</span> Live.
+              Seek. <span className="font-bold">Learn.</span> Live.
             </h1>
 
             {/* Subtitle */}
             <h2 className="text-2xl md:text-4xl font-serif text-white/95 mb-8 leading-relaxed">
               Cultivating{" "}
-              <span className="text-accent font-bold">Sacred Knowledge</span>{" "}
+              <span className="font-bold">Sacred Knowledge</span>{" "}
               for Contemporary Lives
             </h2>
 
@@ -75,10 +75,10 @@ export default function HeroSection() {
       </div>
 
       <div
-        className="absolute bottom-0 left-0 right-0 h-48 pointer-events-none"
+        className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
         style={{
           backgroundImage:
-            "linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1))",
+            "linear-gradient(to bottom, transparent, #fffef2)",
         }}
       />
     </div>

@@ -85,7 +85,7 @@ export default function EventsCarousel() {
           <p className="text-lg text-muted-foreground">Join us for enriching educational and community events</p>
         </div>
 
-        {/* Carousel - Hidden on mobile */} 
+        {/* Carousel - Hidden on mobile */}
         <div className="hidden md:block">
           <div className="relative">
             {/* Events Grid */}
@@ -152,9 +152,8 @@ export default function EventsCarousel() {
                   <button
                     key={idx}
                     onClick={() => setCurrentIndex(idx)}
-                    className={`w-2 h-2 rounded-full transition-all ${
-                      idx === currentIndex ? "bg-primary w-8" : "bg-border"
-                    }`}
+                    className={`w-2 h-2 rounded-full transition-all ${idx === currentIndex ? "bg-primary w-8" : "bg-border"
+                      }`}
                   />
                 ))}
               </div>

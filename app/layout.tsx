@@ -1,19 +1,8 @@
 import type React from "react"
 import type { Metadata } from "next"
 import Script from "next/script"
-import { Playfair_Display, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-})
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-})
 
 export const metadata: Metadata = {
   title: "Mihraab Foundation | Islamic Education Seattle",
@@ -33,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${playfairDisplay.variable} ${inter.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased text-foreground bg-background">
         {children}
         <Analytics />
         {/* CharityStack Embed */}

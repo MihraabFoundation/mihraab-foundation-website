@@ -26,21 +26,21 @@ export default function HifdhAcademyPage() {
             </h2>
             <div className="space-y-6 text-lg text-foreground/80 leading-relaxed text-left">
               <p>
-                Its daily recitation is key to our spiritual development and yet we find more and more that much 
-                of our community lacks the tools necessary to truly appreciate the Qur'ān. For this reason, Mihraab 
+                Its daily recitation is key to our spiritual development and yet we find more and more that much
+                of our community lacks the tools necessary to truly appreciate the Qur'ān. For this reason, Mihraab
                 Foundation has a priority to raise the fluency of the Qur'ān amongst the community.
               </p>
               <p>
-                Thus, we have carefully and methodically developed a <span className="font-semibold text-primary">Tahfīdh al Qur'ān Hifdh Academy</span>. 
-                Through the Hifdh Academy we aim to establish huffādh who not only serve the community and ummah, 
-                but also be torchbearers who carry the light of Qur'ān to the next generation as well as make its 
+                Thus, we have carefully and methodically developed a <span className="font-semibold text-primary">Tahfīdh al Qur'ān Hifdh Academy</span>.
+                Through the Hifdh Academy we aim to establish huffādh who not only serve the community and ummah,
+                but also be torchbearers who carry the light of Qur'ān to the next generation as well as make its
                 recitation more accessible to the larger community. <span className="italic">Success and acceptance is from Allāh ta'āla.</span>
               </p>
               <p>
-                Our program concentrates on memorizing the Qur'ān with correct tajwīd and also a strong emphasis on 
-                maintaining what has already been memorized. Students are encouraged to work rigorously in order to 
-                preserve the previous lessons as they progress through new memorization. Mihraab Foundation also places 
-                a high priority on <span className="font-semibold text-primary">tarbiyyah</span>, which is to nurture students in their overall 
+                Our program concentrates on memorizing the Qur'ān with correct tajwīd and also a strong emphasis on
+                maintaining what has already been memorized. Students are encouraged to work rigorously in order to
+                preserve the previous lessons as they progress through new memorization. Mihraab Foundation also places
+                a high priority on <span className="font-semibold text-primary">tarbiyyah</span>, which is to nurture students in their overall
                 manners, morals, and ethical values, preparing them for leadership in the Muslim community.
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function HifdhAcademyPage() {
                 Completion Timeline
               </Badge>
               <p className="text-2xl font-serif font-bold text-primary">
-                Parents can expect students to finish memorization of the Qur'ān in approximately <span className="text-secondary">3 years</span>.
+                Parents can expect students to finish memorization of the Qur'ān in approximately <span className="text-secondary">4 years</span>.
               </p>
             </div>
           </div>
@@ -93,9 +93,9 @@ export default function HifdhAcademyPage() {
                     </h3>
                   </div>
                   <p className="text-foreground/80 leading-relaxed text-lg">
-                    The students first recite a previously memorized juz (up to two previously memorized juz). 
-                    They are required to recite the entire juz sufficiently. If the previously memorized juz was 
-                    not recited sufficiently, they will not be allowed to recite their new lesson for that day and 
+                    The students first recite a previously memorized juz (up to two previously memorized juz).
+                    They are required to recite the entire juz sufficiently. If the previously memorized juz was
+                    not recited sufficiently, they will not be allowed to recite their new lesson for that day and
                     will have to review and repeat the previously memorized juz again.
                   </p>
                 </div>
@@ -115,9 +115,9 @@ export default function HifdhAcademyPage() {
                     </h3>
                   </div>
                   <p className="text-foreground/80 leading-relaxed text-lg">
-                    After reciting their revision with limited mistakes, the students will then revise and recite 
-                    their current juz. Again, they are required to recite the entire current juz sufficiently. If 
-                    the current juz was not recited sufficiently, they will not be allowed to recite their new lesson 
+                    After reciting their revision with limited mistakes, the students will then revise and recite
+                    their current juz. Again, they are required to recite the entire current juz sufficiently. If
+                    the current juz was not recited sufficiently, they will not be allowed to recite their new lesson
                     for that day and will have to review and repeat their current juz.
                   </p>
                 </div>
@@ -137,9 +137,9 @@ export default function HifdhAcademyPage() {
                     </h3>
                   </div>
                   <p className="text-foreground/80 leading-relaxed text-lg">
-                    If both previously memorized juz and current juz are recited with limited mistakes, the student 
-                    will then have earned the opportunity to recite their new lesson. <span className="font-semibold text-foreground">No memorization mistakes, 
-                    hesitations or Tajwīd mistakes are allowed in the new lesson.</span>
+                    If both previously memorized juz and current juz are recited with limited mistakes, the student
+                    will then have earned the opportunity to recite their new lesson. <span className="font-semibold text-foreground">No memorization mistakes,
+                      hesitations or Tajwīd mistakes are allowed in the new lesson.</span>
                   </p>
                 </div>
               </div>
@@ -158,7 +158,7 @@ export default function HifdhAcademyPage() {
                     </h3>
                   </div>
                   <p className="text-foreground/80 leading-relaxed text-lg">
-                    Before memorizing a new portion, students must first read it under the supervision of the instructor 
+                    Before memorizing a new portion, students must first read it under the supervision of the instructor
                     to ensure proper recitation and Tajwīd. This ensures that students memorize the new portion correctly.
                   </p>
                 </div>
@@ -172,13 +172,13 @@ export default function HifdhAcademyPage() {
               <CheckCircle className="w-6 h-6 text-primary shrink-0 mt-1" />
               <div className="space-y-4">
                 <p className="text-foreground/90 leading-relaxed text-lg">
-                  These rules are to ensure that our students retain what has previously been memorized properly, and to 
-                  ensure that their new lessons have the best potential to be retained in the strongest way possible. A weak 
-                  sabaq or new lesson will lead to a weak current juz' which will in turn lead to an overall weak memorization 
+                  These rules are to ensure that our students retain what has previously been memorized properly, and to
+                  ensure that their new lessons have the best potential to be retained in the strongest way possible. A weak
+                  sabaq or new lesson will lead to a weak current juz' which will in turn lead to an overall weak memorization
                   of the Qur'ān.
                 </p>
                 <p className="text-foreground/90 leading-relaxed text-lg font-medium">
-                  This is why it is important that the previously memorized juz', current juz' and new lesson are recited 
+                  This is why it is important that the previously memorized juz', current juz' and new lesson are recited
                   fluently, and with full confidence.
                 </p>
               </div>
@@ -308,14 +308,14 @@ export default function HifdhAcademyPage() {
                 Join our Hifdh Academy and embark on the noble path of memorizing the Holy Qur'ān.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <ApplyButton />
-              
+
               <Link href="/hifdh-academy/code-of-conduct.pdf" target="_blank" rel="noopener noreferrer">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
+                <Button
+                  variant="outline"
+                  size="lg"
                   className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-6 text-lg"
                 >
                   <FileText className="w-5 h-5 mr-2" />
