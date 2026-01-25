@@ -29,11 +29,11 @@ export default function SubpageHero({
       <div className="relative z-50 flex items-center justify-between px-4 md:px-8 py-1 md:py-2">
         <Link href="/" className="shrink-0">
           <Image
-            src="/branding/images/01_Logos/One lined Word Mark/One Line Word Mark White.svg"
+            src="/branding/images/01_Logos/Word Mark Compact/Word Mark White.svg"
             alt="Mihraab Foundation"
-            height={32}
-            width={180}
-            className="h-6 sm:h-7 md:h-8 w-auto transition-all"
+            height={100}
+            width={100}
+            className="h-12 sm:h-14 md:h-16 w-auto transition-all"
           />
         </Link>
 

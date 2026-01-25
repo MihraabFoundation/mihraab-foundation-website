@@ -49,8 +49,8 @@ export default function ArticlesSection() {
         <div className="flex items-center justify-between mb-8">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <BookOpen className="w-5 h-5 text-accent" />
-              <span className="text-sm font-semibold uppercase tracking-wider text-accent">Recent Articles</span>
+              <BookOpen className="w-5 h-5 text-secondary" />
+              <span className="text-sm font-semibold uppercase tracking-wider text-secondary">Recent Articles</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary">Knowledge & Insights</h2>
           </div>
@@ -87,7 +87,7 @@ export default function ArticlesSection() {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-3 mb-2">
                     {article.category && (
-                      <span className="text-xs font-semibold uppercase tracking-wider text-secondary">
+                      <span className="text-xs font-semibold uppercase tracking-wider text-accent">
                         {article.category}
                       </span>
                     )}
@@ -100,7 +100,7 @@ export default function ArticlesSection() {
                       })}
                     </span>
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-primary mb-2 group-hover:text-accent transition-colors line-clamp-2">
+                  <h3 className="text-xl font-serif font-bold text-primary mb-2 group-hover:text-secondary transition-colors line-clamp-2">
                     {article.title}
                   </h3>
                   <p className="text-sm text-muted-foreground line-clamp-2 mb-3">{article.excerpt}</p>

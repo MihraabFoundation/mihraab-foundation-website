@@ -58,7 +58,7 @@ export default function MissionBranchesSection() {
                 className="flex flex-col items-center text-center"
               >
                 <div className="mb-6">
-                  <div className="w-38 h-36 rounded-full bg-[#e6e7de] border border-primary/30 flex items-center justify-center">
+                  <div className="w-38 h-36 rounded-full bg-primary/10 border-2 border-primary/30 flex items-center justify-center">
                     {branch.icon}
                   </div>
                 </div>

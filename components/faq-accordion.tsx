@@ -24,8 +24,8 @@ export default function FAQAccordion({ title = "Frequently Asked Questions", ite
     <section className="py-16 px-4 md:px-8 max-w-4xl mx-auto">
       <div className="flex flex-col md:flex-row gap-12 md:gap-16">
         {/* Title Section */}
-        <div className="md:w-1/3 flex-shrink-0">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-secondary">{title}</h2>
+        <div className="md:w-1/3 shrink-0">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary">{title}</h2>
         </div>
 
         {/* FAQ Items */}
@@ -50,7 +50,7 @@ export default function FAQAccordion({ title = "Frequently Asked Questions", ite
 
               {/* Answer */}
               {openIndex === index && (
-                <div className="pb-4 text-secondary leading-relaxed animate-in fade-in duration-200">{item.answer}</div>
+                <div className="pb-4 text-foreground/80 leading-relaxed animate-in fade-in duration-200">{item.answer}</div>
               )}
             </div>
           ))}

@@ -170,7 +170,7 @@ export default function CurriculumPage() {
             two years with three quarters per year, totaling six quarters of intensive study.
           </p>
           <Link href="/scholastic-branch/seminary/register">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
               Register Now
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
@@ -288,7 +288,7 @@ export default function CurriculumPage() {
               </Button>
             </Link>
             <Link href="/scholastic-branch/seminary/register">
-              <Button className="bg-primary hover:bg-primary/90 text-white">
+              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
                 Register Now
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>

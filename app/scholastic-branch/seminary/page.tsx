@@ -171,21 +171,21 @@ export default function SeminaryPage() {
                 <h3 className="text-2xl font-serif font-bold text-primary mb-6">Arabic Level One</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Nahw (Grammar) 101</h4>
                       <p className="text-sm text-muted-foreground">Fundamentals of Arabic grammar and syntax</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Sarf (Morphology) 101</h4>
                       <p className="text-sm text-muted-foreground">Study of word formation and root patterns</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Application/Lab 101</h4>
                       <p className="text-sm text-muted-foreground">Practical application of grammar and morphology</p>
@@ -198,21 +198,21 @@ export default function SeminaryPage() {
                 <h3 className="text-2xl font-serif font-bold text-primary mb-6">Arabic Level Two</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Nahw (Grammar) 201</h4>
                       <p className="text-sm text-muted-foreground">Advanced Arabic grammar and complex structures</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Sarf (Morphology) 201</h4>
                       <p className="text-sm text-muted-foreground">Advanced morphological analysis and patterns</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Application/Lab 201</h4>
                       <p className="text-sm text-muted-foreground">Advanced practical application and text analysis</p>
@@ -240,7 +240,7 @@ export default function SeminaryPage() {
               </Button>
             </Link>
             <Link href="/scholastic-branch/seminary/register">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-8">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8">
                 Register Now
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

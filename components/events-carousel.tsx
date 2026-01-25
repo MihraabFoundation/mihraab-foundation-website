@@ -100,7 +100,7 @@ export default function EventsCarousel() {
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                     {event.isFeatured && (
-                      <div className="absolute top-3 right-3 bg-secondary text-white px-3 py-1 rounded-full text-xs font-semibold">
+                      <div className="absolute top-3 right-3 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-semibold">
                         Featured
                       </div>
                     )}
@@ -116,15 +116,15 @@ export default function EventsCarousel() {
 
                     <div className="space-y-2 text-sm">
                       <div className="flex items-center gap-2 text-foreground">
-                        <Calendar size={16} className="text-accent shrink-0" />
+                        <Calendar size={16} className="text-secondary shrink-0" />
                         <span>{event.date}</span>
                       </div>
                       <div className="flex items-center gap-2 text-foreground">
-                        <Clock size={16} className="text-accent shrink-0" />
+                        <Clock size={16} className="text-secondary shrink-0" />
                         <span>{event.time}</span>
                       </div>
                       <div className="flex items-center gap-2 text-foreground">
-                        <MapPin size={16} className="text-accent shrink-0" />
+                        <MapPin size={16} className="text-secondary shrink-0" />
                         <span>{event.location}</span>
                       </div>
                     </div>
@@ -177,7 +177,7 @@ export default function EventsCarousel() {
               <div className="relative h-40 overflow-hidden bg-muted">
                 <img src={event.image || "/placeholder.svg"} alt={event.title} className="w-full h-full object-cover" />
                 {event.isFeatured && (
-                  <div className="absolute top-3 right-3 bg-accent text-white px-3 py-1 rounded-full text-xs font-semibold">
+                  <div className="absolute top-3 right-3 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-semibold">
                     Featured
                   </div>
                 )}
@@ -192,15 +192,15 @@ export default function EventsCarousel() {
 
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center gap-2 text-foreground">
-                    <Calendar size={16} className="text-accent" />
+                    <Calendar size={16} className="text-secondary" />
                     <span>{event.date}</span>
                   </div>
                   <div className="flex items-center gap-2 text-foreground">
-                    <Clock size={16} className="text-accent" />
+                    <Clock size={16} className="text-secondary" />
                     <span>{event.time}</span>
                   </div>
                   <div className="flex items-center gap-2 text-foreground">
-                    <MapPin size={16} className="text-accent" />
+                    <MapPin size={16} className="text-secondary" />
                     <span>{event.location}</span>
                   </div>
                 </div>

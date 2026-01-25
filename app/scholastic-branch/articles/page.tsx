@@ -123,21 +123,21 @@ export default function ArticlesPage() {
                 {/* Content */}
                 <div className="p-8 md:p-12 flex flex-col justify-center">
                   {featuredArticle.category && (
-                    <span className="inline-block text-xs font-semibold uppercase tracking-wider text-secondary mb-3">
+                    <span className="inline-block text-xs font-semibold uppercase tracking-wider text-accent mb-3">
                       {featuredArticle.category}
                     </span>
                   )}
-                  <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4 group-hover:text-accent transition-colors">
+                  <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4 group-hover:text-secondary transition-colors">
                     {featuredArticle.title}
                   </h2>
                   <p className="text-muted-foreground mb-6 line-clamp-3">{featuredArticle.excerpt}</p>
                   <div className="flex items-center gap-6 text-sm text-foreground/70 mb-6">
                     <div className="flex items-center gap-2">
-                      <User size={16} className="text-accent" />
+                      <User size={16} className="text-secondary" />
                       <span>{featuredArticle.author}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Calendar size={16} className="text-accent" />
+                      <Calendar size={16} className="text-secondary" />
                       <span>
                         {new Date(featuredArticle.publishDate).toLocaleDateString("en-US", {
                           year: "numeric",
@@ -179,7 +179,7 @@ export default function ArticlesPage() {
                       <div className="absolute inset-0 bg-linear-to-t from-primary/40 to-transparent" />
                       {article.category && (
                         <div className="absolute top-3 left-3">
-                          <span className="bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-xs font-semibold">
+                          <span className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-semibold">
                             {article.category}
                           </span>
                         </div>
@@ -189,17 +189,17 @@ export default function ArticlesPage() {
 
                   {/* Content */}
                   <div className="flex-1">
-                    <h4 className="text-xl font-serif font-bold text-primary mb-2 group-hover:text-accent transition-colors line-clamp-2">
+                    <h4 className="text-xl font-serif font-bold text-primary mb-2 group-hover:text-secondary transition-colors line-clamp-2">
                       {article.title}
                     </h4>
                     <p className="text-sm text-muted-foreground mb-4 line-clamp-2">{article.excerpt}</p>
                     <div className="flex items-center justify-between text-xs text-foreground/60 mb-4">
                       <div className="flex items-center gap-2">
-                        <User size={14} className="text-accent" />
+                        <User size={14} className="text-secondary" />
                         <span>{article.author}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Calendar size={14} className="text-accent" />
+                        <Calendar size={14} className="text-secondary" />
                         <span>
                           {new Date(article.publishDate).toLocaleDateString("en-US", {
                             month: "short",
