@@ -21,7 +21,7 @@ export default function SubpageHero({
       <div className="absolute inset-0 bg-linear-to-r from-primary/60 via-primary/70 to-primary/80" />
 
       {/* Announcement Banner */}
-      <div className="relative z-50 w-full bg-[oklch(0.75_0.1_47)] text-center py-2 text-sm text-secondary-foreground">
+      <div className="relative z-50 w-full bg-secondary text-center py-2 text-sm text-secondary-foreground">
         Upcoming Event: Registration for Hifdh Academy Fall 2025 is now open!
       </div>
 

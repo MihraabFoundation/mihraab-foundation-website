@@ -44,6 +44,11 @@ export default function Footer() {
                     Sacred Knowledge Classes
                   </Link>
                 </li>
+                <li>
+                  <Link href="/scholastic-branch/articles" className="opacity-80 hover:opacity-100 transition-opacity">
+                    Articles
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -58,7 +63,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link href="/youth-branch/futuwwa" className="opacity-80 hover:opacity-100 transition-opacity">
-                    Futuwwa
+                    Al-Fityan
                   </Link>
                 </li>
                 <li>

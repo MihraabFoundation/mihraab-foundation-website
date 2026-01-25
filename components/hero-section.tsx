@@ -20,7 +20,7 @@ export default function HeroSection() {
       {/* Content Container */}
       <div className="relative z-10 w-full min-h-[500px] flex flex-col">
         {/* Announcement Banner */}
-        <div className="w-full bg-[oklch(0.75_0.1_47)] text-center py-2 text-sm text-secondary-foreground">
+        <div className="w-full bg-secondary text-center py-2 text-sm text-secondary-foreground">
           Upcoming Event: Registration for Hifdh Academy Fall 2025 is now open!
         </div>
         <div className="flex items-center justify-between px-4 md:px-8 py-1 md:py-2">

@@ -17,13 +17,14 @@ const navItems: NavItem[] = [
     submenu: [
       { label: "Mihraab Seminary", href: "/scholastic-branch/seminary" },
       { label: "Sacred Knowledge Classes", href: "/scholastic-branch/sacred-knowledge-classes" },
+      { label: "Articles", href: "/scholastic-branch/articles" },
     ],
   },
   {
     label: "Youth Branch",
     submenu: [
       { label: "Halaqahs", href: "/youth-branch/halaqahs" },
-      { label: "Futuwwa", href: "/youth-branch/futuwwa" },
+      { label: "Al-Fityan", href: "/youth-branch/futuwwa" },
       { label: "Youth Chaplaincy", href: "/youth-branch/youth-chaplaincy" },
     ],
   },
