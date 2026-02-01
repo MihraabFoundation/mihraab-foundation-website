@@ -1,9 +1,7 @@
 import SubpageHero from "@/components/subpage-hero"
 import Footer from "@/components/footer"
-import { Mail, MapPin, Clock, ArrowRight, ExternalLink } from "lucide-react"
-import { Separator } from "@/components/ui/separator"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import ContactForm from "@/components/contact-form"
+import { Mail, MapPin, Clock, DollarSign } from "lucide-react"
 
 export const metadata = {
   title: "Contact Us | Mihraab Foundation",
@@ -26,57 +24,50 @@ export default function ContactPage() {
             </p>
           </div>
 
-          {/* Contact Methods - List Style */}
+          {/* Contact Methods - Cards */}
           <div className="space-y-8 mb-16">
-            {/* General Inquiries */}
-            <div className="flex items-start gap-6 pb-8 border-b border-primary/10">
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                <Mail className="w-7 h-7 text-primary" />
-              </div>
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-2">
+            {/* General Inquiries - Form */}
+            <div className="rounded-2xl border border-primary/10 bg-card p-8 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <Mail className="w-6 h-6 text-primary" />
+                </div>
+                <div>
                   <h3 className="text-2xl font-serif font-bold text-primary">
                     General Inquiries
                   </h3>
-                  <Badge variant="outline" className="border-primary text-primary">
-                    Primary Contact
-                  </Badge>
+                  <p className="text-muted-foreground text-sm">
+                    Programs, classes, events, or general information
+                  </p>
                 </div>
-                <p className="text-muted-foreground mb-4">
-                  For questions about our programs, classes, events, or any general information.
-                </p>
-                <a 
-                  href="mailto:info@mihraab.com" 
-                  className="text-xl text-secondary font-semibold hover:underline inline-flex items-center gap-2"
-                >
-                  info@mihraab.com
-                  <ArrowRight className="w-5 h-5" />
-                </a>
               </div>
+              <ContactForm />
             </div>
 
-            {/* Financial/Donations */}
-            <div className="flex items-start gap-6 pb-8 border-b border-primary/10">
-              <div className="w-14 h-14 rounded-full bg-secondary/20 flex items-center justify-center shrink-0">
-                <Mail className="w-7 h-7 text-secondary" />
-              </div>
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-2">
+            {/* Financial & Donations Card */}
+            <div className="rounded-2xl border border-primary/10 bg-card p-8 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center shrink-0">
+                  <DollarSign className="w-6 h-6 text-secondary" />
+                </div>
+                <div>
                   <h3 className="text-2xl font-serif font-bold text-primary">
                     Financial & Donations
                   </h3>
+                  <p className="text-muted-foreground text-sm">
+                    Donations, zakat, sponsorships, or financial matters
+                  </p>
                 </div>
-                <p className="text-muted-foreground mb-4">
-                  For questions about donations, zakat, sponsorships, or financial matters.
-                </p>
-                <a 
-                  href="mailto:accounting@mihraab.com" 
-                  className="text-xl text-secondary font-semibold hover:underline inline-flex items-center gap-2"
-                >
-                  accounting@mihraab.com
-                  <ArrowRight className="w-5 h-5" />
-                </a>
               </div>
+              <p className="text-muted-foreground mb-4">
+                For questions about donations, zakat, sponsorships, or financial matters, please email us directly.
+              </p>
+              <a
+                href="mailto:accounting@mihraab.com"
+                className="text-lg text-secondary font-semibold hover:underline inline-flex items-center gap-2"
+              >
+                accounting@mihraab.com
+              </a>
             </div>
           </div>
 
@@ -88,7 +79,7 @@ export default function ContactPage() {
                 <h3 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">
                   Visit Our Campus
                 </h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
@@ -97,9 +88,24 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-foreground mb-1">Address</p>
                       <p className="text-muted-foreground">
-                        123 Example Street<br />
-                        Seattle, WA 98101
+                        19221 36th Ave W<br />
+                        Lynnwood, WA 98036
                       </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
+                      <Mail className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-medium text-foreground mb-1">Email</p>
+                      <a
+                        href="mailto:info@mihraab.com"
+                        className="text-muted-foreground hover:text-secondary transition-colors"
+                      >
+                        info@mihraab.com
+                      </a>
                     </div>
                   </div>
 
@@ -115,25 +121,10 @@ export default function ContactPage() {
                       </p>
                     </div>
                   </div>
-
-                  {/* <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
-                      <Phone className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-foreground mb-1">Phone</p>
-                      <a 
-                        href="tel:+12065551234" 
-                        className="text-muted-foreground hover:text-secondary transition-colors"
-                      >
-                        (206) 555-1234
-                      </a>
-                    </div>
-                  </div> */}
                 </div>
 
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=123+Example+Street+Seattle+WA+98101"
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=19221+36th+Ave+W,+Lynnwood,+WA+98036"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 mt-8 text-secondary font-medium hover:underline"
@@ -145,7 +136,7 @@ export default function ContactPage() {
               {/* Google Map Embed */}
               <div className="h-80 lg:h-auto lg:min-h-[400px] bg-secondary/10">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172158.29556188564!2d-122.4821472!3d47.6131742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1702838400000!5m2!1sen!2sus"
+                  src="https://www.google.com/maps?q=19221+36th+Ave+W,+Lynnwood,+WA+98036&z=16&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: "320px" }}
