@@ -24,6 +24,15 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { BookOpen, AlertCircle } from "lucide-react"
 
+const formatPhoneNumber = (value: string): string => {
+  const digits = value.replace(/\D/g, "").slice(0, 10)
+  if (digits.length <= 3) return digits ? `(${digits}` : ""
+  if (digits.length <= 6) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`
+  return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)} ${digits.slice(6)}`
+}
+
+const PHONE_REGEX = /^\(\d{3}\) \d{3} \d{4}$/
+
 interface HifdhApplicationModalProps {
   open: boolean
   onOpenChange: (open: boolean) => void
@@ -64,10 +73,33 @@ export default function HifdhApplicationModal({
   })
 
   const watchedPreviouslyEnrolled = form.watch("previouslyEnrolled")
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
-  const onSubmit = (data: ApplicationFormData) => {
-    console.log("Form submitted:", data)
-    // TODO: Handle form submission
+  const onSubmit = async (data: ApplicationFormData) => {
+    setIsSubmitting(true)
+    setSubmitError(null)
+
+    try {
+      const res = await fetch("/api/hifdh-application", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+
+      const result = await res.json()
+
+      if (!res.ok) {
+        throw new Error(result.error || "Failed to submit application")
+      }
+
+      onOpenChange(false)
+      form.reset()
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : "Something went wrong. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -161,12 +193,23 @@ export default function HifdhApplicationModal({
               <FormField
                 control={form.control}
                 name="parentPhone"
-                rules={{ required: "Phone number is required" }}
+                rules={{
+                  required: "Phone number is required",
+                  pattern: {
+                    value: PHONE_REGEX,
+                    message: "Please enter a valid phone number (e.g., (555) 123 4567)",
+                  },
+                }}
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Parent/Guardian Phone</FormLabel>
                     <FormControl>
-                      <Input type="tel" placeholder="(555) 123-4567" {...field} />
+                      <Input
+                        type="tel"
+                        placeholder="(555) 123 4567"
+                        {...field}
+                        onChange={(e) => field.onChange(formatPhoneNumber(e.target.value))}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -354,6 +397,12 @@ export default function HifdhApplicationModal({
               )}
             </div>
 
+            {submitError && (
+              <div className="p-3 rounded-md bg-destructive/10 text-destructive text-sm">
+                {submitError}
+              </div>
+            )}
+
             <Separator />
 
             <div className="flex justify-end gap-3 pt-4">
@@ -361,11 +410,16 @@ export default function HifdhApplicationModal({
                 type="button"
                 variant="outline"
                 onClick={() => onOpenChange(false)}
+                disabled={isSubmitting}
               >
                 Cancel
               </Button>
-              <Button type="submit" className="bg-primary hover:bg-primary/90">
-                Submit Application
+              <Button
+                type="submit"
+                className="bg-primary hover:bg-primary/90"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Submitting..." : "Submit Application"}
               </Button>
             </div>
           </form>

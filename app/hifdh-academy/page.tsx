@@ -48,7 +48,7 @@ export default function HifdhAcademyPage() {
 
           {/* Timeline Highlight */}
           <div className="relative">
-            <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-secondary to-primary/20" />
+            <div className="absolute left-0 top-0 bottom-0 w-1 bg-linear-to-b from-primary via-secondary to-primary/20" />
             <div className="pl-8 py-6">
               <Badge variant="outline" className="mb-2 border-primary text-primary text-sm px-3 py-1">
                 Completion Timeline
@@ -81,8 +81,8 @@ export default function HifdhAcademyPage() {
             <div className="space-y-12">
               {/* Step 1 */}
               <div className="relative flex gap-8">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center border-4 border-background shadow-lg">
+                <div className="shrink-0">
+                  <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-linear-to-br from-primary to-secondary flex items-center justify-center border-4 border-background shadow-lg">
                     <span className="text-2xl md:text-3xl font-bold text-primary-foreground">1</span>
                   </div>
                 </div>
@@ -103,8 +103,8 @@ export default function HifdhAcademyPage() {
 
               {/* Step 2 */}
               <div className="relative flex gap-8">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center border-4 border-background shadow-lg">
+                <div className="shrink-0">
+                  <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-linear-to-br from-primary to-secondary flex items-center justify-center border-4 border-background shadow-lg">
                     <span className="text-2xl md:text-3xl font-bold text-primary-foreground">2</span>
                   </div>
                 </div>
@@ -125,8 +125,8 @@ export default function HifdhAcademyPage() {
 
               {/* Step 3 */}
               <div className="relative flex gap-8">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center border-4 border-background shadow-lg">
+                <div className="shrink-0">
+                  <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-linear-to-br from-primary to-secondary flex items-center justify-center border-4 border-background shadow-lg">
                     <span className="text-2xl md:text-3xl font-bold text-primary-foreground">3</span>
                   </div>
                 </div>
@@ -146,8 +146,8 @@ export default function HifdhAcademyPage() {
 
               {/* Step 4 */}
               <div className="relative flex gap-8">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center border-4 border-background shadow-lg">
+                <div className="shrink-0">
+                  <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-linear-to-br from-primary to-secondary flex items-center justify-center border-4 border-background shadow-lg">
                     <span className="text-2xl md:text-3xl font-bold text-primary-foreground">4</span>
                   </div>
                 </div>
