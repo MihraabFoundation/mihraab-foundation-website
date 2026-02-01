@@ -1,8 +1,5 @@
-import { Resend } from "resend"
-import { env, validateEnv } from "@/lib/env"
 import { NextResponse } from "next/server"
-
-const resend = new Resend(env.resend.apiKey)
+import { sendEmail } from "@/services/email"
 
 interface ApplicationFormData {
   parentFirstName: string
@@ -63,29 +60,23 @@ function buildEmailHtml(data: ApplicationFormData): string {
 
 export async function POST(request: Request) {
   try {
-    validateEnv()
-
     const body = (await request.json().catch(() => ({}))) as ApplicationFormData
-    const studentName = body.studentFirstName && body.studentLastName
-      ? `${body.studentFirstName} ${body.studentLastName}`
-      : "New Applicant"
+    const studentName =
+      body.studentFirstName && body.studentLastName
+        ? `${body.studentFirstName} ${body.studentLastName}`
+        : "New Applicant"
     const subject = `Hifdh Academy Application: ${studentName}`
 
-    const { data, error } = await resend.emails.send({
-      from: "onboarding@resend.dev", // After domain setup: "Hifdh Academy <no-reply@mihraab.com>"
-      to: "tech@mihraab.com",
-      replyTo: body.parentEmail, // Reply goes directly to the applicant
+    const { id } = await sendEmail({
+      replyTo: body.parentEmail,
       subject,
       html: buildEmailHtml(body),
     })
 
-    if (error) {
-      return NextResponse.json({ error: error.message }, { status: 500 })
-    }
-
-    return NextResponse.json({ success: true, id: data?.id })
+    return NextResponse.json({ success: true, id })
   } catch (error) {
-    const message = error instanceof Error ? error.message : "Failed to send application email"
+    const message =
+      error instanceof Error ? error.message : "Failed to send application email"
     return NextResponse.json({ error: message }, { status: 500 })
   }
 }
